@@ -293,6 +293,9 @@ public class LazyGridView extends JFrame {
 
             @Override
             protected Object doInBackground() throws Exception {
+            	// starting progress bar
+            	Log4jBottomPanel.log4jProgressBar.setIndeterminate(true);
+            	
                 //this is always executed in a different thread from the current thread
                 //it doesn't matter if the current thread is the EDT or a thread in the Executor
                 final java.sql.Statement stmt = connection.createStatement();
@@ -322,6 +325,7 @@ public class LazyGridView extends JFrame {
             	LogData.setDate(dateValue);
                 LogData.setLevel( levelValue );
                 LogData.setMessage(messageValue);
+                Log4jBottomPanel.log4jProgressBar.setIndeterminate(false);
 //                Logger.getLogger(ResultList.class.getName()).info("updating LogData " + LogData);
             }
         };
