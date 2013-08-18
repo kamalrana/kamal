@@ -91,6 +91,7 @@ public class QuickParsingMainPanel extends JPanel implements ActionListener{
 	public void actionPerformed(ActionEvent event) {
 		Object source = event.getSource();
 		if(source==quickParsingBTN){
+			Log4jBottomPanel.log4jProgressBar.setValue(0);
 			LogParserCommon.deactivateComponents( mainPanel.getFullParserMainPanel() );				
 			LogParserCommon.activateComponents( mainPanel.getQuickParsingMainPanel() );
 		}

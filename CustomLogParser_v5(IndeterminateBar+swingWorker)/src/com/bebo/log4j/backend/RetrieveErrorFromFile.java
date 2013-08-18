@@ -88,7 +88,6 @@ public class RetrieveErrorFromFile extends JFrame {
 		ArrayList tableData = new ArrayList();
 		String sql;
 		String[] colName = new String[] { "date", "level", "message" };
-		// File f=new File("D:\\sqlite\\logs\\log.out");
 		BufferedReader br = null;
 		HashMap<Integer, HashMap<String, String>> map = new HashMap();
 

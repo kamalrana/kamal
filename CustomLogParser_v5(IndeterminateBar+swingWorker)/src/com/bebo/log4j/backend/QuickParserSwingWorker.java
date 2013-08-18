@@ -22,7 +22,7 @@ public class QuickParserSwingWorker extends SwingWorker<Void, Void>{
 	@Override
 	protected Void doInBackground() throws Exception {
 		Log4jBottomPanel.log4jProgressBar.setIndeterminate(true);
-		parseErrorBtnActionPerformed();
+		parseErrorBtnAction();
 		return null;
 	}
 	
@@ -31,7 +31,7 @@ public class QuickParserSwingWorker extends SwingWorker<Void, Void>{
 		Log4jBottomPanel.log4jProgressBar.setIndeterminate(false);
 	}
 	
-	public void parseErrorBtnActionPerformed() {
+	public void parseErrorBtnAction() {
 		System.out.println("quick error button");
 
 		Long startmili = System.currentTimeMillis();
@@ -54,12 +54,12 @@ public class QuickParserSwingWorker extends SwingWorker<Void, Void>{
 		System.out.println("reqDateFormat " + reqDateFormat);
 
 		String datePattern = patternConversion.getDatePattern(reqDateFormat);
-//		System.out.println("date pattern from date format :: "+datePattern);    
+		// System.out.println("date pattern from date format :: "+datePattern);    
 		
 		String logFileName = mainPanel.getHeaderPanel().getLogFile_TXT().getText();
                 
 		RetrieveErrorFromFile retrieveErrorFromFile = new RetrieveErrorFromFile( datePattern, logFileName);
-//      
+
 		quickParsingMainPanel.setRetrieveErrorFromFile(retrieveErrorFromFile);
 		
 		quickParsingMainPanel.setNnoOfErrorFoundLBL_2(retrieveErrorFromFile.getNoOfErrors());
