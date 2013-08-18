@@ -1,0 +1,35 @@
+2013-08-03 00:08:24  INFO (LogParserPanel.java:484) - invoking method :validateAndCreateCSV
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:556) - logParserSysTempFolder D:\Users\kamal64\AppData\Local\Temp\LogParserTemp
+2013-08-03 00:08:25 ERROR (LogParserPanel.java:560) - **** ERROR creating temp folder ****
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:573) - Temp Folder Path is D:\Users\kamal64\AppData\Local\Temp\LogParserTemp
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:574) - Log Parser home is C:\Program Files\Log Parser 2.2
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:576) - Minimum file size to split : 200
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:591) - Where query is : time-taken>1000
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:602) - Log file path parent G:\eclipse_workspaces\core\CustomLogParser New
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:604) - Log file path G:\eclipse_workspaces\core\CustomLogParser New\u_ex130130.log
+2013-08-03 00:08:25 DEBUG (FileSplitter.java:67) - split file to be path D:\Users\kamal64\AppData\Local\Temp\LogParserTemp\u_ex130130.log.1.spt
+2013-08-03 00:08:25 DEBUG (FileSplitter.java:108) - Line Number :44679
+2013-08-03 00:08:25  INFO (LogParserPanel.java:608) - File splitted..
+2013-08-03 00:08:25  INFO (LogParserPanel.java:630) - Select clause in query is s-ip
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:635) - Splitted files are 1
+2013-08-03 00:08:25 DEBUG (LogParserPanel.java:645) - "C:\Program Files\Log Parser 2.2\LogParser.exe" -rtp:-1 -i:IISW3C "SELECT s-ip INTO D:\Users\kamal64\AppData\Local\Temp\LogParserTemp\test1.csv FROM D:\Users\kamal64\AppData\Local\Temp\LogParserTemp\u_ex130130.log.1.spt where time-taken>1000"
+2013-08-03 00:08:25 ERROR (LogParserPanel.java:669) - IOException : Cannot run program ""C:\Program": CreateProcess error=2, The system cannot find the file specified
+2013-08-03 00:08:30  INFO (LogParserPanel.java:484) - invoking method :deleteAllLogFiles
+2013-08-03 00:08:30 DEBUG (LogParserPanel.java:745) - Number of log files to be deleted 0
+2013-08-03 00:08:30  INFO (LogParserPanel.java:752) - log files deleted..
+2013-08-03 00:08:30  INFO (LogParserPanel.java:484) - invoking method :mergeAllCSVFiles
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:31) - spliFilepath ::: D:\Users\kamal64\AppData\Local\Temp\LogParserTemp
+2013-08-03 00:08:30  INFO (CSVMerger.java:65) - file path is LogParserTemp
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:67) - files [Ljava.lang.String;@abcf24
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:68) - files size is 1
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:78) -  CSV files list for merging is : 0
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:162) - Stats 
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:163) - Dotted footer 
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:164) - Element Processed 0
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:165) - Element output 0
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:166) - Execution time : 0.0
+2013-08-03 00:08:30 DEBUG (CSVMerger.java:179) - Writer not null.closingjava.io.FileWriter@1ac7925
+2013-08-03 00:08:30 DEBUG (LogParserPanel.java:726) - File merged...
+2013-08-03 00:08:30  INFO (LogParserPanel.java:484) - invoking method :deleteAllCSVFiles
+2013-08-03 00:08:30 DEBUG (LogParserPanel.java:772) - Number of csv files to be deleted 0
+2013-08-03 00:08:30  INFO (LogParserPanel.java:783) - Csv files deleted...
