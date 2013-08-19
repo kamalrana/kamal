@@ -15,6 +15,11 @@ public class PatternConversion {
 	private TreeMap<String, String> tempMap = new TreeMap<>();
 	private TreeMap<Integer, TreeMap<String, String>> patternMap = new TreeMap<>();
 
+	/*public String getLevelFormat(String conversionPattern){
+		
+		return null;
+	}*/
+	
 	public String getReqDateFormat(String conversionPattern) {
 
 		String[] temp = conversionPattern.split("%");
